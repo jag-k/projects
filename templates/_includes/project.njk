@@ -1,4 +1,18 @@
+{%- if project.links -%}
+{%- if project.links.url -%}
+{% set project_link = project.links.url %}
+{%- elif project.links.github -%}
+{% set project_link = "https://github.com/" + project.links.github %}
+{%- elif project.links.gitlab -%}
+{% set project_link = project.links.gitlab %}
+{%- endif -%}
+{%- endif -%}
+
+{%- if project_link -%}
+### [{{ project.name }}]({{ project_link }})
+{%- else -%}
 ### {{ project.name }}
+{%- endif %}
 
 {{ project.description | trim }}
 
