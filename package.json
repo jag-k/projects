@@ -1,0 +1,22 @@
+{
+  "name": "projects",
+  "version": "1.0.0",
+  "private": true,
+  "description": "List of my projects",
+  "scripts": {
+    "github-readme": "npx @11ty/eleventy --config=.eleventy/github_readme.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jag-k/projects.git"
+  },
+  "author": "Jag_k <me@jagk.ru> (https://jagk.ru/)",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/jag-k/projects/issues"
+  },
+  "homepage": "https://github.com/jag-k/projects#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1"
+  }
+}

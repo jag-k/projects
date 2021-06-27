@@ -1,0 +1,43 @@
+### {{ project.name }}
+
+{{ project.description | trim }}
+
+{% set projectEndDate = project.date.to %}
+{%- if projectEndDate -%}
+{% set projectEnd = projectEndDate.toLocaleDateString(lang) %}
+{%- else -%}
+{% set projectEnd = i18n[lang].stillWorking %}
+{%- endif -%}
+- {{ i18n[lang].workDay }}: {{ project.date.since.toLocaleDateString(lang) }} - {{ projectEnd }}
+- {{ i18n[lang].role }}: {{ project.role | trim }}
+{% if project.stack %}
+#### {{ i18n[lang].stack.base }}
+{% for stackField in ["languages", "frameworks", "technologies"] %}
+{%- if project.stack[stackField] %}
+- {{ i18n[lang].stack[stackField] }}:
+  {% for dat in project.stack[stackField] -%}
+  - {{ dat }}
+  {% endfor -%}
+  {% endif -%}
+{% endfor -%}
+{% endif -%}
+
+{% if project.links %}
+#### {{ i18n[lang].links.base }}
+{% if project.links.url %}
+- {{ i18n[lang].links.url }}: [{{ project.links.url }}]({{ project.links.url }})
+{%- endif %}
+{%- if project.links.github %}
+- {{ i18n[lang].links.github }}: [{{ project.links.github }}](https://github.com/{{ project.links.github }})
+{%- endif %}
+{%- if project.links.gitlab %}
+- {{ i18n[lang].links.gitlab }}: [{{ project.links.gitlab }}]({{ project.links.gitlab }})
+{% endif -%}
+{% endif %}
+{% if project.summary %}
+#### {{ i18n[lang].summary }}
+
+{{ project.summary | trim }}
+{% endif %}
+
+----------------------------------------------------------------

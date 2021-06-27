@@ -1,0 +1,28 @@
+project:
+  date: 
+    since: 2018-07-02
+    to: 2018-08-10
+  
+  stack:
+    languages:
+      - Python
+      - JavaScript
+
+    frameworks:
+      - Bottle
+      - Bootstrap
+      - Yandex.Map API
+      - jQuery
+
+  links:
+    url: https://vk.com/wall-94462582_720
+
+  langs:
+    ru:
+      name: Eco-monitoring
+      company: IT-Лаборатория'2018 (SECON)
+      description: |
+        EcoMonitoring позволяет увидеть с помощью карт, в каких места находятся различные виды живых организмов.
+      role: "Backend разработчик, Проектный менеджер"
+      summary: |
+        Работая над этим проектом я впервые попробовал себя в роли проектного менеджера

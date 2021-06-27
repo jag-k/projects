@@ -1,0 +1,111 @@
+{
+  "title": "Project scheme",
+  "type": "object",
+  "definitions": {
+    "stack": {
+      "type": "array",
+      "items": {
+        "type": "string"
+      },
+      "minItems": 1,
+      "uniqueItems": true
+    },
+    "lang": {
+      "type": "object",
+      "properties": {
+        "name": {
+          "type": "string",
+          "description": "Name of project"
+        },
+        "company": {
+          "type": "string",
+          "description": "Company name"
+        },
+        "description": {
+          "type": "string",
+          "description": "Description of project"
+        },
+        "role": {
+          "type": "string",
+          "description": "You role in project"
+        },
+        "summary": {
+          "type": "string"
+        }
+      },
+      "required": ["name", "description", "role"]
+    }
+  },
+  "properties": {
+    "project": {
+      "type": "object",
+      "properties": {
+        "date": {
+          "type": "object",
+          "properties": {
+            "since": {
+              "type": "string",
+              "format": "date"
+            },
+            "to": {
+              "type": "string",
+              "format": "date"
+            }
+          },
+          "required": ["since"]
+        },
+        "stack": {
+          "type": "object",
+          "properties": {
+            "languages": {
+              "$ref": "#/definitions/stack",
+              "description": "Program languages (like: NodeJS, Python, Rust)"
+            },
+            "frameworks": {
+              "$ref": "#/definitions/stack",
+              "description": "Frameworks and libs (like: jQuery, Django, React)"
+            },
+            "technologies": {
+              "$ref": "#/definitions/stack",
+              "description": "Technologies, workflow and instruments (like: Git-flow, GitLab CI, Docker)"
+            }
+          }
+        },
+        "links": {
+          "type": "object",
+          "properties": {
+            "url": {
+              "type": "string",
+              "format": "url",
+              "description": "Link to project (like: https://github.com/jag-k/projects)"
+            },
+            "gitlab": {
+              "type": "string",
+              "format": "url",
+              "description": "Link to repository on GitLab (like: https://gitlab.com/jag-k/projects)"
+            },
+            "github": {
+              "type": "string",
+              "pattern": "^[\\da-zA-Z-_]+/[\\da-zA-Z-_]+$",
+              "description": "Short link in Github (like: jag-k/projects)"
+            }
+          },
+          "additionalProperties": { "type": "string" }
+        },
+        "langs": {
+          "type": "object",
+          "properties": {
+            "en": { "$ref": "#/definitions/lang" },
+            "ru": { "$ref": "#/definitions/lang" }
+          },
+          "anyOf": [
+            { "required": ["en"] },
+            { "required": ["ru"] }
+          ]
+        }
+      },
+      "required": ["date", "langs"]
+    }
+  },
+  "required": ["project"]
+}

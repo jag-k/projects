@@ -1,0 +1,20 @@
+---
+permalink: "{{ page.filePathStem }}"
+lang: ru
+---
+# Список моих проектов
+
+[English Version](/README.en.md)
+
+Здесь я собрал часть своих проектов, которые не стыдно (ну может немного) показать друзьям, HR-у, маме, бабушке, [Никите Дубко](https://github.com/MeFoDy) и другим людям :)
+
+## Немного о себе
+
+Я занимаюсь программированием с 2016 года, окончил [Яндекс.Лицей](https://yandexlyceum.ru/) 2016-2018 с отличием в своём родном городе Пенза.
+Участвовал в [IT-Лаборатории'2018](https://vk.com/wall-94462582_720) и победил в [IT-Лаборатории'2020](https://secon.ru/news/161).
+Так же занимался разработкой сайтов [SECOTHON](https://secothon.secon.ru), [Ассоциации SECON](https://secon.ru) и [Конференции SECON'2021](https://2021.secon.ru)
+
+## Проекты
+{% for project in projects.ru %}
+{% include 'project.njk' %}
+{% endfor %}
