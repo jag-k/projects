@@ -23,7 +23,9 @@
 {% set projectEnd = i18n[lang].stillWorking %}
 {%- endif -%}
 - {{ i18n[lang].workDay }}: {{ project.date.since.toLocaleDateString(lang) }} - {{ projectEnd }}
+{% if project.role -%}
 - {{ i18n[lang].role }}: {{ project.role | trim }}
+{%- endif %}
 {% if project.stack %}
 #### {{ i18n[lang].stack.base }}
 {% for stackField in ["languages", "frameworks", "technologies"] %}

@@ -33,7 +33,7 @@
           "type": "string"
         }
       },
-      "required": ["name", "description", "role"]
+      "required": ["name", "description"]
     }
   },
   "properties": {

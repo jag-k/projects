@@ -1,0 +1,25 @@
+project:
+  date: 
+    since: 2021-07-26
+  
+  stack:
+    languages:
+      - JavaScript
+
+    frameworks:
+      - Eleventy
+    technologies:
+      - JSON Scheme
+      - GitHub Actions
+
+  links:
+    github: jag-k/projects
+
+  langs:
+    ru:
+      name: Репозиторий проектов
+      description: |
+        Данный репозиторий был создан мной для автоматического создания списка моих проектов и экспорта их в разные системы. 
+        Например: hh.ru, Хабр.Фриланс и Хабр.Карьера
+
+        В проекте использованы GitHub Actions для автоматической сборки через Eleventy
