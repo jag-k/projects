@@ -19,15 +19,15 @@ jobs:
       - name: Build
         run: npm run github-readme
 
-      - name: Git Add Readme
+      - name: Git Commit
         run: |
           mv dist/* .
-          git add .
-          ls -alt
+          git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
+          git commit -m "Update README.md" -a
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
-          branch: main
-          force: true
+          branch: ${{ github.ref }}
