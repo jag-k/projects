@@ -1,4 +1,4 @@
-# List of my projects
+# 📦 List of my projects
 
 [Русская версия](/README.md)
 
