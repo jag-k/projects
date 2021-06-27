@@ -17,10 +17,13 @@ jobs:
         run: npm ci
 
       - name: Build
+        run: npm run github-readme
+
+      - name: Git Add Readme
         run: |
-          npm run github-readme
           mv dist/* .
           git add .
+          ls -alt
 
       - name: GitHub Push
         uses: ad-m/github-push-action@v0.6.0
