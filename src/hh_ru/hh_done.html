@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Data saved successfully!</title>
+  <style>
+    code {
+      display: inline-block;
+      background-color: rgba(0, 0, 0, .1);
+      padding: .35em .5em;
+      border-radius: .3em;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Data saved successfully!</h1>
+  <p>Now you can close this tab</p>
+  <p><strong>or</strong></p>
+  <p>For use GitHub Action you must be <a target="_blank" href="${secret_href}">create Secret in repo</a>
+    <a target="_blank" href="https://docs.github.com/en/actions/reference/encrypted-secrets">(?)</a> with name
+    <code>CREDENTIAL</code> and paste this code:
+  </p>
+  <code>${code}</code>
+</body>

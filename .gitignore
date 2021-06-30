@@ -1,3 +1,8 @@
 node_modules/
 .vscode/
 dist/
+*.private
+*.secret
+*.private.*
+*.secret.*
+.env
