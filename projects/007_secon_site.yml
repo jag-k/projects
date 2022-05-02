@@ -1,0 +1,24 @@
+project:
+  date:
+    since: 2019-06-01
+    to: 2020-01-08
+
+  stack:
+    languages:
+      - Python
+      - JavaScript
+
+    frameworks:
+      - Bottle
+      - Bootstrap
+      - jQuery
+
+  links:
+    url: https://secon.com
+
+  langs:
+    ru:
+      name: Сайт SECON
+      company: SECON
+      description: Разработка сайта для Ассоциации Разработчиков Пензенской Области SECON
+      role: "PM, Frontend разработчик"

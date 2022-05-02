@@ -1,0 +1,25 @@
+project:
+  date:
+    since: 2021-01-08
+    to: 2021-01-08
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+
+    languages:
+      - Ruby
+      - JavaScript
+
+    frameworks:
+      - Ruby on Rails
+
+  links:
+    url: https://2021.secon.com
+
+  langs:
+    ru:
+      name: Сайт SECON'2021
+      company: OkDesk
+      description: Доработка сайта главной Пензенской IT-конференции SECON'2021
+      role: "Fullstack разработчик"

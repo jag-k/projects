@@ -1,8 +1,8 @@
 project:
-  date: 
-    since: 2018-07-02
-    to: 2018-08-10
-  
+  date:
+    since: 2019-06-01
+    to: 2020-01-08
+
   stack:
     languages:
       - Python

@@ -1,0 +1,35 @@
+project:
+  date:
+    since: 2020-07-02
+    to: 2020-08-10
+
+  stack:
+    technologies:
+      - Docker
+      - GitLab CI
+      - UpSource
+      - PostgreSQL
+
+    languages:
+      - Python
+      - JavaScript
+
+    frameworks:
+      - FastAPI
+      - ReactJS
+      - Redux
+
+  links:
+    url: https://vk.com/wall-94462582_1132
+
+  langs:
+    ru:
+      name: OptiMeet
+      company: IT-Лаборатория'2020 (SECON)
+      description: |
+        Сервис представляет собой менеджер митингов с гибкой структурой, 
+        который помогает проводить совещания эффективнее, 
+        обеспечивая конструктивную работу участников в условиях их ограниченного времени.
+        
+        По итогу IT-Лаборатории данный проект взял первое место
+      role: "PM, Frontend разработчик"

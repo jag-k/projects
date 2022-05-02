@@ -1,0 +1,23 @@
+project:
+  date:
+    since: 2021-01-15
+    to: 2021-01-31
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+      - Scriptable App
+
+    languages:
+      - JavaScript
+
+  links:
+    github: jag-k/SberFood
+
+  langs:
+    ru:
+      name: СберФуд Виджет
+      description: |
+        Проект представляет из себя виджет для iOS (используя приложение Scriptable) для отображения баланса 
+        из систем лояльности сберфуда.
+      role: "Frontend разработчик"

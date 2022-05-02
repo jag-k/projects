@@ -1,0 +1,22 @@
+project:
+  date:
+    since: 2021-01-15
+    to: 2021-01-31
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+
+    languages:
+      - JavaScript
+      - TypeScript
+
+  links:
+    github: jag-k/Codyhouse-Figma-Color-Importer
+
+  langs:
+    ru:
+      name: Codyhouse Color Importer 🎨
+      description: |
+        Плагин для Figma, позволяющий быстро и удобно импортировать цвета из фреймворка Codyhouse
+      role: "Frontend разработчик"

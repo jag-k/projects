@@ -1,0 +1,23 @@
+project:
+  date:
+    since: 2022-03-28
+    to: 2022-04-01
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+      - Scriptable App
+
+    languages:
+      - JavaScript
+
+  links:
+    github: jag-k/yandex-balance
+
+  langs:
+    ru:
+      name: Виджет Яндекс Бейджа
+      description: |
+        Проект представляет из себя виджет для iOS (используя приложение Scriptable) для отображения баланса бейджа 
+        сотрудника Яндекса.
+      role: "Frontend разработчик"

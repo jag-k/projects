@@ -1,7 +1,7 @@
 project:
-  date: 
+  date:
     since: 2021-07-26
-  
+
   stack:
     languages:
       - JavaScript

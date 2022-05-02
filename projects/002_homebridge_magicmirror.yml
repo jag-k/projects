@@ -1,0 +1,21 @@
+project:
+  date:
+    since: 2021-11-20
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+
+    languages:
+      - JavaScript
+      - TypeScript
+
+  links:
+    github: jag-k/homebridge-magicmirror
+
+  langs:
+    ru:
+      name: Интеграция MagicMirror с Homebridge
+      description: |
+        Данный проект позволяет добавить управление умным зеркалом на основе MagicMirror в Homebridge.
+      role: "Fullstack разработчик"
