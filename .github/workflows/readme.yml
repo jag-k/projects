@@ -2,14 +2,15 @@ name: GitHub Readme
 
 on:
   push:
-    branches: [ main ]
+    branches: [ $default-branch ]
 
   workflow_dispatch:
 
 jobs:
   build:
     runs-on: ubuntu-latest
-
+    env:
+      HAVE_UPDATE: true
     steps:
       - uses: actions/checkout@v2
 
@@ -25,9 +26,10 @@ jobs:
           git config --local user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git config --local user.name "github-actions[bot]"
           git add .
-          git commit -m "Update README.md"
+          git commit -m "Update README.md" || echo "echo "HAVE_UPDATE=false" >> $GITHUB_ENV"
 
       - name: GitHub Push
+        if: ${{ env.HAVE_UPDATE == "true" }}
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
