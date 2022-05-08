@@ -29,7 +29,7 @@ jobs:
           git commit -m "Update README.md" || echo "echo "HAVE_UPDATE='false'" >> $GITHUB_ENV"
 
       - name: GitHub Push
-        if: ${{ env.HAVE_UPDATE == "true" }}
+        if: ${{ env.HAVE_UPDATE == 'true' }}
         uses: ad-m/github-push-action@v0.6.0
         with:
           github_token: ${{ secrets.GITHUB_TOKEN }}
