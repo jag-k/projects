@@ -9,6 +9,9 @@
 {%- endif -%}
 
 {%- if project_link -%}
+{%- if project.links.github -%}
+[![{{ project.name }}](https://opengraph.githubassets.com/repo/{{ project.links.github }})](https://github.com/{{ project.links.github }})
+{% endif %}
 ### [{{ project.name }}]({{ project_link }})
 {%- else -%}
 ### {{ project.name }}
