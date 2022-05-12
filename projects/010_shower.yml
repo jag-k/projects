@@ -1,0 +1,23 @@
+project:
+  onMain: true
+  date:
+    since: 2021-02-21
+
+  stack:
+    languages:
+      - JavaScript
+
+  links:
+    url: https://shwr.me
+    github: shower/shower
+
+  langs:
+    ru:
+      name: Движок для презентаций Shower
+      company: Shower
+      description: |
+        Shower является движком для презентаций, написанных на веб-технологиях. 
+        На данный момент я уже добавил поддержку touch управления и управления с помощью геймпадов.
+      role: "Maintainer"
+      summary: |
+        У меня ещё много идей по улучшению данного проекта и я стараюсь их реализовать.

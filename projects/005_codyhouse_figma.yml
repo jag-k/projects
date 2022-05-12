@@ -1,4 +1,5 @@
 project:
+  onMain: true
   date:
     since: 2021-01-15
     to: 2021-01-31

@@ -54,6 +54,10 @@
           },
           "required": ["since"]
         },
+        "onMain": {
+          "type": "boolean",
+          "defaultValue": false
+        },
         "stack": {
           "type": "object",
           "properties": {

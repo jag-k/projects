@@ -1,0 +1,11 @@
+---
+permalink: "{{ page.filePathStem }}"
+lang: ru
+---
+# 📦 Мои остальные проекты ({{ projects.ru | onMain(false) | length }})
+
+[Главная](/README.md)
+
+{% for project in projects.ru | onMain(false) | sortByDate  %}
+{% include 'project.njk' %}
+{% endfor %}

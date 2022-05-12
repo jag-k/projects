@@ -4,8 +4,6 @@ const yaml = require('js-yaml');
 
 const PROJECT_DIR = path.resolve(process.env.PROJECT_DIR || "projects");
 
-console.log(PROJECT_DIR);
-
 const _buffer = {}
 
 function getYaml(pathToFile) {
@@ -22,7 +20,6 @@ function getProject(lang) {
     let projectPath = path.join(PROJECT_DIR, projectFilename)
     let projectData = getYaml(projectPath);
 
-    console.log(projectData);
     if (typeof lang === 'string') {
       let langs = projectData.langs;
       delete projectData.langs;
@@ -31,7 +28,6 @@ function getProject(lang) {
       }
     }
   }
-  console.log(res);
   return res;
 }
 
