@@ -22,8 +22,8 @@ const sortByDate = (projects) => {
   };
 
   return projects.sort((a, b) => {
-    if (!a.date.to) return 1;
-    if (!b.date.to) return -1;
+    if (!a.date.to) return -1;
+    if (!b.date.to) return 1;
     return getDate(b) - getDate(a);
   });
 }
