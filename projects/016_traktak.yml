@@ -1,0 +1,26 @@
+project:
+  onMain: true
+  date:
+    since: 2022-11-01
+
+  stack:
+    languages:
+      - Python
+
+  langs:
+    ru:
+      name: Traktat
+      description: |
+        Проект представляет из себя небольшой фоновый процесс, который собирает статистику по просмотрам сериалов и 
+        фильмов с таких сервисов как Кинопоиск и Кинопаб и отправляет историю просмотров на Trakt.tv.
+        В будущем планируется запустить его как полноценный веб-сервис.
+        На данный момент проекта нет в открытом доступе, но скоро он появится.
+      role: "Backend разработчик"
+    en:
+      name: Traktat
+      description: |
+        The project is a small background process that collects statistics on the viewing of TV shows and
+        movies from such services as Kinopoisk and Kinopub and sends the viewing history to Trakt.tv.
+        In the future, it is planned to launch it as a full-fledged web service.
+        The project is not currently available in the open, but it will soon appear.
+      role: "Backend developer"

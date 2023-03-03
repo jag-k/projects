@@ -1,0 +1,30 @@
+project:
+  onMain: true
+  date:
+    since: 2022-11-01
+
+  stack:
+    languages:
+      - Python
+
+  langs:
+    ru:
+      name: Torrentio
+      description: |
+        Проект представляет из себя набор скриптов для докачивания фильмов-сериалов из торрент-файлов.
+        Данные скрипты позволяют из выбранного торрент-файла скачать только нужные серии или фильмы,
+        автоматически переименовывать их, соединять субтитры и видео ряд в единый файл и перемещать в нужные папки.
+        В будущем планируется запустить его как полноценный фоновый процесс и интерфейс в виде Telegram-бота.
+        На данный момент проекта нет в открытом доступе, но скоро он появится.
+      role: "Backend разработчик"
+    en:
+      name: Torrentio
+      description: |
+        The project is a set of scripts for downloading movies and TV shows from torrent files.
+        These scripts allow you to download only the necessary episodes or movies from a selected torrent file,
+        automatically rename them, combine subtitles and video rows into a single file 
+        and move them to the correct folders.
+        In the future, it is planned to launch it as a full-fledged background process 
+        and an interface in the form of a Telegram bot.
+        The project is not currently available in the open, but it will soon appear.
+      role: "Backend developer"

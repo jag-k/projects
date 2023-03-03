@@ -1,0 +1,26 @@
+project:
+  date:
+    since: 2022-12-07
+
+  stack:
+    languages:
+      - HTML
+      - CSS
+      - Python
+
+  langs:
+    ru:
+      name: Server Box
+      description: |
+        Проект представляет из себя мини веб-приложение, 
+        в котором можно отслеживать запущенные сервисы и их статусы на локальном сервере.
+        Поддерживаются такие сервисы как: Plex, Yatch, File Browser, Transmission, Wireguard UI, и т. д.
+        На данный момент проекта нет в открытом доступе, но скоро он появится.
+      role: "Full-stack разработчик"
+    en:
+      name: Server Box
+      description: |
+        The project is a mini web application where you can track running services and their statuses on a local server.
+        Supported services include: Plex, Yatch, File Browser, Transmission, Wireguard UI, etc.
+        The project is not currently available in the open, but it will soon appear.
+      role: "Full-stack developer"

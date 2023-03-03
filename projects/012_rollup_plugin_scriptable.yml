@@ -1,0 +1,29 @@
+project:
+  onMain: true
+  date:
+    since: 2022-08-14
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+      - Scriptable App
+      - Rollup
+
+    languages:
+      - JavaScript
+      - TypeScript
+
+  links:
+    github: jag-k/rollup-plugin-scriptable
+
+  langs:
+    ru:
+      name: Плагин Rollup для сборки JS(X)/TS(X) Scriptable App
+      description: |
+        Плагин для Rollup, позволяющий собирать скрипты для Scriptable App из JS(X)/TS(X) файлов.
+      role: "Frontend разработчик"
+    en:
+        name: Rollup plugin for building JS(X)/TS(X) Scriptable App scripts
+        description: |
+            Rollup plugin that allows you to build Scriptable App scripts from JS(X)/TS(X) files.
+        role: "Frontend developer"

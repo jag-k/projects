@@ -1,0 +1,30 @@
+project:
+  onMain: true
+  date:
+    since: 2022-10-15
+
+  stack:
+    technologies:
+      - Scriptable App
+
+    languages:
+      - TypeScript
+
+  langs:
+    ru:
+      name: Tinkoff Exchange Widget
+      description: |
+        Проект на основе кастомного JSX для Scriptable App, 
+        который позволяет отображать курс валют Тинькофф Банка в виджете.
+        Данный виджет особенно удобен за границей, когда необходимо отслеживать курс валют при покупках с карты.
+        На данный момент проекта нет в открытом доступе, но скоро он появится.
+      role: "Frontend разработчик"
+    en:
+      name: Tinkoff Exchange Widget
+      description: |
+        Project based on custom JSX for Scriptable App, 
+        which allows you to display the exchange rate of Tinkoff Bank currencies in the widget.
+        This widget is especially convenient when traveling abroad, 
+        when you need to track the exchange rate when buying with a card.
+        The project is not currently available in the open, but it will soon appear.
+      role: "Frontend developer"

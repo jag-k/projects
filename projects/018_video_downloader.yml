@@ -1,0 +1,28 @@
+project:
+  onMain: true
+  date:
+    since: 2022-10-10
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+      - Telegram Bot API
+
+    languages:
+      - Python
+
+  links:
+    github: jag-k/tiktok-downloader
+
+  langs:
+    ru:
+      name: Video downloader bot
+      description: |
+        Проект представляет из себя бота для Telegram, 
+        который позволяет скачивать видео с TikTok, Reddit, Twitter и YouTube.
+      role: "Backend разработчик"
+    en:
+      name: Video downloader bot
+      description: |
+        This project is a Telegram bot that allows you to download videos from TikTok, Reddit, Twitter and YouTube.
+      role: "Backend developer"

@@ -1,0 +1,28 @@
+project:
+  onMain: true
+  date:
+    since: 2022-08-14
+
+  stack:
+    technologies:
+      - GitHub Actions (CI/CD)
+      - Scriptable App
+
+    languages:
+      - JavaScript
+      - TypeScript
+
+  links:
+    github: jag-k/scriptable-jsx
+
+  langs:
+    ru:
+      name: JSX для Scriptable App
+      description: |
+        Проект представляет из себя поддержку JSX для Scriptable App для написания виджетов, алертов и других скриптов.
+      role: "Frontend разработчик"
+    en:
+        name: JSX for Scriptable App
+        description: |
+            This project is a support for JSX for Scriptable App for writing widgets, alerts and other scripts.
+        role: "Frontend developer"
